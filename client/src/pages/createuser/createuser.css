@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+
+:root {
+  --clr-white: #fff;
+  --clr-pink: #ff3366;
+  --clr-border: #e0e0e0; /* Light gray border color */
+  --brd-radius: 5px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Lato, sans-serif;
+}
+
+.section-profile {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0.5rem;
+}
+
+.profile-card {
+  max-width: 400px; /* Reduced width of the card */
+  border-radius: var(--brd-radius);
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Slightly smaller shadow */
+  border: 2px solid var(--clr-border);
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the content horizontally */
+  padding: 1rem;
+}
+
+.profile-card img {
+  max-width: 150px; /* Adjust size of default profile picture */
+  border-radius: var(--brd-radius);
+  margin-bottom: 1rem; /* Space below the image */
+  margin-top: 1rem; /* Space above the image */
+}
+
+.form {
+  width: 100%; /* Make the form fill the width of the card */
+}
+
+.form-control {
+  margin-bottom: 15px; /* Reduced margin for compact spacing */
+}
+
+.form label {
+  display: block;
+  width: 100%;
+  font-size: 13px; /* Slightly smaller font size for labels */
+  color: #bababa;
+}
+
+.form input {
+  width: 100%;
+  font-size: 16px; /* Slightly smaller font size for input fields */
+  margin-top: 4px; /* Reduced margin */
+  padding: 10px; /* Reduced padding */
+  border: 1px solid #bababa;
+  font-family: "Lato", sans-serif;
+  border-radius: var(--brd-radius);
+  background-color: #f4f8fb;
+}
+
+.form input:focus {
+  outline: none;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.15); /* Slightly smaller shadow */
+}
+
+.btn-submit {
+  width: 100%;
+  display: inline-block;
+  padding: 0.7rem; /* Reduced padding for a smaller button */
+  background-color: var(--clr-pink);
+  color: #fff;
+  font-size: 15px; /* Slightly smaller font size */
+  font-weight: 600;
+  font-family: "Lato", sans-serif;
+  border: 1px solid var(--clr-pink);
+  border-radius: var(--brd-radius);
+  cursor: pointer;
+  transition: all 0.2s linear;
+  margin-top: 8px; /* Reduced margin */
+}
+
+.btn-submit:hover {
+  background-color: transparent;
+  color: var(--clr-pink);
+}
+
+.btn-cancel {
+  width: 100%;
+  display: inline-block;
+  padding: 0.7rem;
+  background-color: #2d3480;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: "Lato", sans-serif;
+  border: 1px solid #2d3480;
+  border-radius: var(--brd-radius);
+  cursor: pointer;
+  transition: all 0.2s linear;
+  margin-top: 8px;
+}
+
+.btn-cancel:hover {
+  background-color: transparent;
+  color: var(--clr-pink);
+}
+
+.preview {
+  margin-top: 8px; /* Space above the preview */
+  text-align: center; /* Center the preview image */
+}
+
+.profile-preview {
+  width: 100%;
+  height: auto;
+  max-width: 120px; /* Reduced max width for preview */
+  border-radius: var(--brd-radius);
+  border: 1px solid var(--clr-border);
+}
+
+.error-message {
+  color: red;
+  font-size: 13px; /* Slightly smaller font size */
+  margin-top: 4px; /* Reduced margin */
+}

@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+
+:root {
+  --clr-white: #fff;
+  --clr-pink: #ff3366;
+  --clr-border: #e0e0e0; /* Light gray border color */
+  --brd-radius: 5px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Lato, sans-serif;
+  /* Removed background color from body */
+}
+
+.section-sign-up {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0.5rem;
+}
+
+.sign-up-card {
+  max-width: 500px; /* Increased width of the card */
+  border-radius: var(--brd-radius);
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Optional: adds shadow for better visibility */
+  border: 2px solid var(--clr-border); /* Added border color to the card */
+}
+
+.form {
+  padding: 1.5rem; /* Increased padding for better form spacing */
+}
+
+.form-control {
+  margin-bottom: 20px; /* Increased margin for better spacing */
+}
+
+.form label {
+  display: block;
+  width: 100%;
+  font-size: 14px; /* Slightly increased font size for labels */
+  color: #bababa;
+}
+
+.form input {
+  width: 100%;
+  font-size: 18px; /* Increased font size for better readability */
+  margin-top: 5px; /* Increased margin for better spacing */
+  padding: 12px; /* Further increased padding for larger input fields */
+  transition: all 0.15s linear;
+  border: 1px solid #bababa;
+  font-family: "Lato", sans-serif;
+  border-radius: var(--brd-radius);
+  background-color: #f4f8fb; /* Light background color for input fields */
+}
+
+.form input:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+
+.btn-sign-up {
+  width: 100%;
+  display: inline-block;
+  padding: 0.8rem; /* Further increased padding for a larger button */
+  background-color: var(--clr-pink); /* Button background color */
+  color: #fff;
+  font-size: 16px; /* Kept font size for readability */
+  font-weight: 600;
+  font-family: "Lato", sans-serif;
+  border: 1px solid var(--clr-pink);
+  border-radius: var(--brd-radius);
+  cursor: pointer;
+  transition: all 0.2s linear;
+  margin-top: 10px; /* Increased margin for better spacing */
+}
+
+.btn-sign-up:hover {
+  background-color: transparent; /* Remove background color on hover */
+  color: var(--clr-pink);
+}
+
+.more {
+  display: flex;
+  justify-content: space-between;
+}
+
+.more a {
+  text-decoration: none;
+  font-size: 12px; /* Slightly increased font size for links */
+  display: inline-block;
+}
+
+.forget-password-link {
+  color: #888;
+}
+
+.sign-in-link {
+  color: var(--clr-pink);
+}
+
+/* Add to your CSS */
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}

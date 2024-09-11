@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+
+:root {
+  --clr-white: #fff;
+  --clr-pink: #ff3366;
+  --clr-border: #e0e0e0;
+  --brd-radius: 5px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Lato, sans-serif;
+}
+
+.section-sign-in {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0.5rem;
+}
+
+.sign-in-card {
+  max-width: 500px;
+  border-radius: var(--brd-radius);
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border: 2px solid var(--clr-border);
+}
+
+.form {
+  padding: 1.5rem;
+}
+
+.form-control {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.admin-icon {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 24px;
+  color: var(--clr-pink);
+}
+
+.form input {
+  width: 100%;
+  padding: 12px 12px 12px 40px; /* Adjust padding to make space for icon */
+  font-size: 18px;
+  margin-top: 5px;
+  border: 1px solid #bababa;
+  font-family: "Lato", sans-serif;
+  border-radius: var(--brd-radius);
+  background-color: #f4f8fb;
+}
+
+.form input:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+
+.btn-sign-in {
+  width: 100%;
+  padding: 0.8rem;
+  background-color: var(--clr-pink);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Lato", sans-serif;
+  border: 1px solid var(--clr-pink);
+  border-radius: var(--brd-radius);
+  cursor: pointer;
+  transition: all 0.2s linear;
+  margin-top: 10px;
+}
+
+.btn-sign-in:hover {
+  background-color: transparent;
+  color: var(--clr-pink);
+}
+
+.more {
+  display: flex;
+  justify-content: space-between;
+}
+
+.more a {
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.forgot-password-link {
+  color: #888;
+}
+
+.sign-up-link {
+  color: var(--clr-pink);
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.password-field {
+  position: relative;
+}
+
+.password-field input {
+  width: 100%;
+  padding: 12px 12px 12px 40px; /* Adjust padding to make space for icon */
+}
+
+.password-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  font-size: 24px;
+  color: var(--clr-pink);
+  cursor: pointer;
+}
+

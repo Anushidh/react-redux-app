@@ -1,0 +1,92 @@
+.user-table-container {
+  padding: 0 20px; /* Adds padding on left and right sides of the container */
+  overflow-x: auto; /* Ensures that if the table is wider than the container, a horizontal scrollbar appears */
+}
+
+table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table td, table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center; /* Centers content horizontally in cells */
+}
+
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+table tr:hover {
+  background-color: #ddd;
+}
+
+table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center; /* Ensures header text is centered */
+  background-color: #04AA6D;
+  color: white;
+}
+
+/* Styles for status buttons */
+.status-button {
+  border: none;
+  padding: 8px 16px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.status-button.block {
+  background-color: red;
+  color: white;
+}
+
+.status-button.unblock {
+  background-color: green;
+  color: white;
+}
+
+.status-button:hover {
+  opacity: 0.8;
+}
+
+/* Disabled state for pagination buttons */
+.pagination-btn:disabled {
+  background-color: #ccc; /* Light gray background for disabled buttons */
+  cursor: not-allowed; /* Indicates that the button is disabled */
+  opacity: 0.6; /* Slightly transparent to show it's inactive */
+}
+
+/* Existing styles for pagination buttons */
+.pagination-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; /* Adds space between the table and the buttons */
+}
+
+.pagination-btn {
+  background-color: #04AA6D; /* Green background */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  margin: 0 10px; /* Adds space between the buttons */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.pagination-btn:hover {
+  background-color: #028a56; /* Darker shade of green on hover */
+  transform: scale(1.05); /* Slight scaling effect on hover */
+}
+
+.pagination-btn:active {
+  transform: scale(0.95); /* Slight shrinking effect when clicked */
+}
+
